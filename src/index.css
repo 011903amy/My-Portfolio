@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  
+  html {
+    @apply h-full;
+  }
+  
+  body {
+    @apply  font-['Inter']  min-h-screen w-full;
+  }
+  
+  a {
+    @apply no-underline;
+  }
+  
+  ul {
+    @apply list-none;
+  }
+  
+  button {
+    @apply cursor-pointer bg-transparent outline-none;
+  }
+  
+  p {
+    @apply mb-1.5 text-sm text-balance leading-normal;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold  leading-normal font-['Inter'] ;
+  }
+  
+  h1 {
+    @apply text-[clamp(35px,4vw,50px)] leading-none mb-2;
+  }
+  
+  h2 {
+    @apply text-[clamp(28px,4vw,42px)] leading-none mb-2;
+  }
+  
+  h3 {
+    @apply text-[clamp(20px,4vw,38px)] leading-none mb-2;
+  }
+  
+  h4 {
+    @apply text-[clamp(18px,4vw,24px)] leading-none mb-2;
+  }
+  
+  h5 {
+    @apply text-[clamp(14px,4vw,18px)] leading-none mb-2;
+  }
+  
+  img {
+    @apply block;
+  }
+  }
+
+  @layer cpmponents{
+     .container {
+    @apply max-w-[1800px] mx-auto px-4;
+  }
+  .btn {
+    @apply p-1.5 border border-transparent flex gap-2 rounded-full transition-all items-center bg-secondary text-sm py-2;
+  }
+  .btn-contact {
+    @apply bg-secondary text-white hover:bg-light hover:text-black
+  }
+  }
